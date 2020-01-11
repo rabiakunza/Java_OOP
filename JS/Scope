@@ -66,3 +66,21 @@ var obj=new Employee();
 BINDING IN JS
 https://gist.github.com/zcaceres/2a4ac91f9f42ec0ef9cd0d18e4e71262#default-binding
 
+
+
+var y={
+    name:"vinay",
+    age:"24"
+};
+var fun=function foo(){
+    this.zzz=8;
+console.log(this.name);
+console.log(this.age);
+console.log(this);
+}
+var bind=fun.bind(y);
+bind();
+
+
+
+
